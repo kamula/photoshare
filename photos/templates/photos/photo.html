@@ -14,9 +14,9 @@
             <div class="col">
                 <a class="btn btn-dark my-3" href="{% url 'gallery' %}">Go back</a>
                 <div style="height: 90vh;">
-                    <img style="max-width: 100%;max-height: 100%;" src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Card image cap" alt="">
+                    <img style="max-width: 100%;max-height: 100%;" src="{{ photo.image.url }}" alt="Card image cap" alt="">
                     <p>
-                        simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        {{ photo.description }}
                     </p>
                 </div>
             </div>
